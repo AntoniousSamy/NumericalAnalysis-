@@ -1,0 +1,51 @@
+﻿<Window x:Class="Numerical_Analysis_Project.BisFalData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Numerical_Analysis_Project"
+        mc:Ignorable="d"
+ Title="BisFalData"  
+        Height="334.662" Width="681.873"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid>
+            <Grid HorizontalAlignment="Left" Width="170" Background="White"/>
+            <Image Source="icon/Logo.jpg" Margin="0,-3,515,179"/>
+            <Button Margin="48,252,573,21" Background="{x:Null}" BorderBrush="{x:Null}"   Click="Back">
+                <Image Source="icon/Back.png" Height="65" Width="64" RenderTransformOrigin="0.472,0.306"/>
+            </Button>
+            <TextBlock Text="Bisection" Margin="44,174,549,122" FontFamily="Agency FB" FontSize="30"/>
+            <Label Content="Function:"
+                Foreground="White"
+                FontSize="18"
+                Margin="226,58,372,237"/>
+            <TextBox x:Name="Fun" Foreground="White" FontSize="16" HorizontalAlignment="Left" Height="22" Margin="321,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Background="#FF383740" />
+            <Label Content="Xl:"
+                Foreground="White"
+                FontSize="18"
+                Margin="234,125,410,175" RenderTransformOrigin="1.316,0.657"/>
+            <TextBox x:Name="Xl" Foreground="White" FontSize="16" HorizontalAlignment="Left" Height="22" Margin="321,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Background="#FF383740"/>
+            <Label Content="Xu:"
+                Foreground="White"
+                FontSize="18"
+                Margin="228,190,417,106" RenderTransformOrigin="1.278,0.564"/>
+            <TextBox x:Name="Xu" Foreground="White" FontSize="16" HorizontalAlignment="Left" Height="22" Margin="321,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Background="#FF383740"/>
+            <Label Content="Error:"
+                Foreground="White"
+                FontSize="18"
+                Margin="222,251,406,47"/>
+            <TextBox x:Name="ERR" Foreground="White" FontSize="16" HorizontalAlignment="Left" Height="22" Margin="321,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Background="#FF383740"/>
+            <Button  Margin="585,270,17,8" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent" Click="Bis">
+                <Image Source="icon/calc.png" Width="66" Height="46"/>
+            </Button>
+
+        </Grid>
+
+    </Border>
+</Window>
+

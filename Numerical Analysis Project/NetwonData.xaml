@@ -1,0 +1,36 @@
+﻿<Window x:Class="Numerical_Analysis_Project.NetwonData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Numerical_Analysis_Project"
+        mc:Ignorable="d"
+        Title="NetwonData" 
+             Height="334.662" Width="681.873"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid>
+            <Grid HorizontalAlignment="Left" Width="170" Background="White"/>
+            <Image Source="icon/Logo.jpg" Margin="0,-3,515,179"/>
+            <Button Margin="48,252,573,21" Background="{x:Null}" BorderBrush="{x:Null}"   Click="Back">
+                <Image Source="icon/Back.png" Height="65" Width="64" RenderTransformOrigin="0.472,0.306"/>
+            </Button>
+            <TextBlock Text="Netwon" Margin="48,179,554,117" FontFamily="Agency FB" FontSize="30"/>
+            <TextBox x:Name="Fun" HorizontalAlignment="Left" Height="22" Margin="318,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"  Background="#FF383740" Foreground="White" FontSize="16"/>
+            <TextBox x:Name="xNode" HorizontalAlignment="Left" Height="22" Margin="320,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"  Background="#FF383740" Foreground="White" FontSize="16"/>
+            <TextBox x:Name="ERR" HorizontalAlignment="Left" Height="22" Margin="321,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"  Background="#FF383740" Foreground="White" FontSize="16"/>
+            <Label Content="Function :" HorizontalAlignment="Left" Margin="207,67,0,0" VerticalAlignment="Top" Width="89" BorderBrush="White" Foreground="White" FontSize="18"/>
+            <Label Content="X Node :" HorizontalAlignment="Left" Margin="208,136,0,0" VerticalAlignment="Top" Width="80" BorderBrush="White" Foreground="White" FontSize="18"/>
+            <Label Content="Error :" HorizontalAlignment="Left" Margin="208,198,0,0" VerticalAlignment="Top" Width="61" BorderBrush="White" Foreground="White" FontSize="18"/>
+            <Button  Margin="585,270,17,8" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent" Click="Calc2">
+                <Image Source="icon/calc.png" Width="66" Height="46"/>
+            </Button>
+
+        </Grid>
+
+    </Border>
+</Window>

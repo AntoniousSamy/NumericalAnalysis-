@@ -1,0 +1,72 @@
+﻿<Window x:Class="Numerical_Analysis_Project.Cramer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Numerical_Analysis_Project"
+        mc:Ignorable="d"
+        Title="Cramer" Height="600" Width="1200"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid Margin="12,-2,-12,2">
+            <TextBlock
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Foreground="#FFF1F199"
+                FontSize="24"
+                 FontWeight="ExtraBold"
+                Margin="536,52,0,508" Width="100" Height="40" TextDecorations="Underline" Text="Cramer"/>
+            <Label Content="Equation1:" HorizontalAlignment="Left" Margin="154,214,0,0" VerticalAlignment="Top" Height="36" RenderTransformOrigin="0.592,0.25" FontWeight="Bold" FontSize="22" Foreground="White"/>
+            <Label Content="Equation2:" HorizontalAlignment="Left" Margin="154,304,0,0" VerticalAlignment="Top" Height="36" RenderTransformOrigin="0.592,0.25" FontWeight="Bold" FontSize="22" Foreground="White"/>
+            <Label Content="Equation3:" HorizontalAlignment="Left" Margin="155,395,0,0" VerticalAlignment="Top" Height="36" RenderTransformOrigin="0.592,0.25" FontWeight="Bold" FontSize="22" Foreground="White"/>
+            <Label Content="X1" HorizontalAlignment="Left" Margin="412,222,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <Label Content="X2" HorizontalAlignment="Left" Margin="570,219,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="2.014,2.513"/>
+            <Label Content="X3" HorizontalAlignment="Left" Margin="712,220,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold"/>
+            <TextBox x:Name="x11" HorizontalAlignment="Left" Height="36" Margin="354,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958" FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <TextBox x:Name="x12" HorizontalAlignment="Left" Height="36" Margin="504,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <TextBox x:Name="x13" HorizontalAlignment="Left" Height="36" Margin="646,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <Label Content="=" HorizontalAlignment="Left" Margin="790,220,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="1.838,0.487"/>
+            <TextBox x:Name="s1" HorizontalAlignment="Left" Height="36" Margin="852,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+
+            <Label Content="X1" HorizontalAlignment="Left" Margin="412,310,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <Label Content="X2" HorizontalAlignment="Left" Margin="570,309,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="2.014,2.513"/>
+            <Label Content="X3" HorizontalAlignment="Left" Margin="712,308,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold"/>
+            <TextBox x:Name="x21" HorizontalAlignment="Left" Height="36" Margin="354,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958" FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <TextBox x:Name="x22" HorizontalAlignment="Left" Height="36" Margin="504,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <TextBox x:Name="x23" HorizontalAlignment="Left" Height="36" Margin="646,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <Label Content="=" HorizontalAlignment="Left" Margin="790,304,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="1.838,0.487"/>
+            <TextBox x:Name="s2" HorizontalAlignment="Left" Height="36" Margin="852,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+
+            <Label Content="X1" HorizontalAlignment="Left" Margin="412,396,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <Label Content="X2" HorizontalAlignment="Left" Margin="570,397,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="2.014,2.513"/>
+            <Label Content="X3" HorizontalAlignment="Left" Margin="712,392,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold"/>
+            <TextBox x:Name="x31" HorizontalAlignment="Left" Height="36" Margin="354,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <TextBox x:Name="x32" HorizontalAlignment="Left" Height="36" Margin="504,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <TextBox x:Name="x33" HorizontalAlignment="Left" Height="36" Margin="646,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958"  FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+            <Label Content="=" HorizontalAlignment="Left" Margin="790,390,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="1.838,0.487"/>
+            <TextBox x:Name="s3" HorizontalAlignment="Left" Height="36" Margin="852,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" RenderTransformOrigin="1.205,0.958" FontFamily="Times New Roman" FontSize="25" Background="#FF383740" Foreground="White" />
+
+            <Button  Margin="1044,500,60,18" Background="Transparent" BorderBrush="Transparent" Foreground="Transparent" Click="Gu">
+                <Image Source="icon/calc.png" Width="74" Height="62"/>
+            </Button>
+
+            <Label Content="X1" HorizontalAlignment="Left" Margin="92,518,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <TextBlock x:Name="sx1" HorizontalAlignment="Left" Margin="164,518,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <Label Content="=" HorizontalAlignment="Left" Margin="134,518,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="1.838,0.487"/>
+
+            <Label Content="X2" HorizontalAlignment="Left" Margin="292,522,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <TextBlock x:Name="sx2" HorizontalAlignment="Left" Margin="365,518,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <Label Content="=" HorizontalAlignment="Left" Margin="330,523,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="1.838,0.487"/>
+
+            <Label Content="X3" HorizontalAlignment="Left" Margin="468,523,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <TextBlock  x:Name="sx3" HorizontalAlignment="Left" Margin="546,518,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" RenderTransformOrigin="2.054,2.718"/>
+            <Label Content="=" HorizontalAlignment="Left" Margin="509,526,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" RenderTransformOrigin="1.838,0.487"/>
+
+        </Grid>
+    </Border>
+</Window>
+

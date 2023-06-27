@@ -1,0 +1,51 @@
+﻿<Window x:Class="Numerical_Analysis_Project.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Numerical_Analysis_Project"
+        mc:Ignorable="d"
+        Title="Window6"      Height="600" Width="1200"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid Margin="18,-5,-18,5">
+            <DataGrid x:Name="DataGridxaml" HorizontalAlignment="Left" Height="474" Margin="16,76,0,0" VerticalAlignment="Top" Width="1132"  FontSize="24"  >
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="Yellow"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header="I" Binding="{Binding iter}"  Width="60"/>
+                    <DataGridTextColumn Header="XL" Binding="{Binding XL}" Width="120"/>
+                    <DataGridTextColumn Header="F(XL)" Binding="{Binding fXL}"  Width="120"/>
+                    <DataGridTextColumn Header="X2" Binding="{Binding X2}" Width="120"/>
+                    <DataGridTextColumn Header="F(X2)" Binding="{Binding fX2}" Width="120"/>
+                    <DataGridTextColumn Header="X1" Binding="{Binding X1}" Width="120"/>
+                    <DataGridTextColumn Header="F(X1)" Binding="{Binding fX1}" Width="120"/>
+                    <DataGridTextColumn Header="XU" Binding="{Binding XU}" Width="120"/>
+                    <DataGridTextColumn Header="F(XU)" Binding="{Binding fXU}" Width="120"/>
+                    <DataGridTextColumn Header="D" Binding="{Binding D}" Width="*"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <TextBlock Text="Golden Section Method"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Foreground="White"
+                FontSize="24"
+                 FontWeight="ExtraBold"
+                Margin="480,26,0,542" Width="283"/>
+
+
+        </Grid>
+    </Border>
+
+</Window>
