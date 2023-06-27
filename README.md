@@ -44,7 +44,7 @@ This project provides a user-friendly interface that allows users to interact wi
 
 To run this project on your local machine, follow these steps:
 
-1. Clone this repository to your local machine using `https://github.com/AntoniousSamy/NumericalAnalysis-.git`.
+1. Clone this repository to your local machine using `AntoniousSamy/NumericalAnalysis-.git`.
 2. Open the solution file (`NumericalAnalysisProject.sln`) in Visual Studio.
 3. Build the solution to restore NuGet packages and compile the project.
 
